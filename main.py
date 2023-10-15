@@ -52,5 +52,9 @@ async def eco(ctx):
 async def ecosovet(ctx):
     await ctx.send("Кратко о том, что можно сделать для экологии прямо сейчас: \n \n" + random.choice(listeco))
 
+@bot.command()
+async def help(ctx):
+    await ctx.send("Список доступных команд: \n help - Все команды \n eco - Мем/фотография об экологии \n ecosovet - Советы как не вредить экологии")
+
 
 bot.run(settings["TOKEN"])
